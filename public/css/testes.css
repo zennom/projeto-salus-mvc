@@ -1,0 +1,140 @@
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/banner-3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.banner_headline h1 {
+    color: #ffffff;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px#444444;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+}
+.banner_headline h2 {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px#444444;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+    max-width: 350px;
+}
+
+
+#geral {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.widget_title_bar {
+    width: 680px;
+    height: 3px;
+    background-color:#1D3557;
+    margin-bottom:20px;
+}
+
+
+div#container {
+    display: table; 
+    width: 450px;
+    margin-bottom: 20px;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div#container div.cell {
+    display: table-cell;
+}
+
+div#container div.cell:last-child {
+    /* Makes sure this cell is only wide enough
+       for the button label. */
+    width: 1px;
+}
+  
+input[type=search], div.button {  
+    width: 100%;
+    height: 35px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+  
+input[type=search] {
+    margin: 0;
+    padding: 0 10px;
+    background-color: #f9f5f5;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+div.button {
+    line-height: 35px;
+    margin: 0;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #457B9D;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    white-space: nowrap;
+}
+
+
+/* The Image Box */
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+/* The Image */
+div.img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Description of Image */
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+    display: flex;
+    width: 20%;
+    margin-bottom: 20px;
+    
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
