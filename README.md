@@ -15,4 +15,6 @@ Exemplo:
 
 `PORT = 80`
 
+Em seguida rode o comando 
+
 `npm run start-dev`
