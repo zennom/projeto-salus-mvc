@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import * as PageController from '../controllers/pageController'
+import * as apiController from '../controllers/apiController'
 
 const router = Router()
 
