@@ -12,5 +12,7 @@ router.get('/sobre',PageController.sobre)
 router.get('/login',PageController.login)
 router.get('/cadastro',PageController.cadastro)
 
+router.post('/unidades',apiController.criarUnidade)
+
 
 export default router
