@@ -12,6 +12,7 @@ router.get('/sobre',PageController.sobre)
 router.get('/login',PageController.login)
 router.get('/cadastro',PageController.cadastro)
 
+//criando API's
 router.post('/unidades',apiController.criarUnidade)
 
 

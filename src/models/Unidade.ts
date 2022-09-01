@@ -3,17 +3,17 @@ import {Model, DataTypes} from 'sequelize'
 import {sequelize} from '../instances/mysql'
 
 export interface UnidadeInstance extends Model{
-    id:number,
-    nome: string,
-    cidade:string,
-    logradouro:string,
-    bairro:string,
-    cep:number,
-    tel:string,
-    uf:string
+  id:number,
+  nome: string,
+  cidade:string,
+  logradouro:string,
+  bairro:string,
+  cep:number,
+  tel:string,
+  uf:string
 }
 
-export const Unidade = sequelize.define<UnidadeInstance>('Unidade',{
+export const Unidade = sequelize.define('Unidade',{
   id:{
     primaryKey: true,
     autoIncrement:true,
@@ -32,7 +32,7 @@ export const Unidade = sequelize.define<UnidadeInstance>('Unidade',{
     type:DataTypes.STRING
   },
   cep:{
-    type:DataTypes.STRING
+    type:DataTypes.INTEGER
   },
   tel:{
     type:DataTypes.STRING
