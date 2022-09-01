@@ -1,5 +1,5 @@
 ## Projeto Salus em NodeJS
-Projeto PetShop feito em NodeJS
+Projeto feito em NodeJS
 
 ### Pré-requisitos globais:
 `npm i -g nodemon typescript ts-node`
