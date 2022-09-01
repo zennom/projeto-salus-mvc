@@ -28,3 +28,31 @@ export const pegarUnidade = async(req:Request, res: Response) =>{
         res.json({error:"Unidade não cadastrada"})
     }
 }
+
+export const atualizaUnidade = async(req:Request, res: Response) =>{
+    let {id} = req.params
+    let {nome,cidade,logradouro,bairro,cep,tel,uf} = req.body
+
+    let unidade = await Unidade.findByPk(id)
+    if(unidade){
+        unidade.nome = nome
+        unidade.cidade = cidade
+        unidade.logradouro = logradouro
+        unidade.bairro = bairro
+        unidade.cep = cep
+        unidade.tel = tel
+        unidade.uf = uf
+
+        await unidade.save()
+        res.json({unidade})
+    } else{
+        res.json({error: "Unidade não cadastrada"})
+    }
+}
+
+export const deletarUnidade = async (req:Request, res: Response) =>{
+    let {id} = req.params
+    await Unidade.destroy({where: {id}})
+
+    res.json({})
+}

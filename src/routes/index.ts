@@ -18,5 +18,8 @@ router.post('/unidades',apiController.criarUnidade)
 router.get('/unidades',apiController.listarUnidades)
 //visualizando uma unidade
 router.get('/unidade/:id',apiController.pegarUnidade)
-
+//editando uma unidade
+router.put('/unidade/:id',apiController.atualizaUnidade)
+//deletando uma unidade
+router.delete('/unidade/:id',apiController.deletarUnidade)
 export default router
