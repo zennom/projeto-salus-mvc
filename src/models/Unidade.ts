@@ -13,7 +13,7 @@ export interface UnidadeInstance extends Model{
   uf:string
 }
 
-export const Unidade = sequelize.define('Unidade',{
+export const Unidade = sequelize.define<UnidadeInstance>('Unidade',{
   id:{
     primaryKey: true,
     autoIncrement:true,
