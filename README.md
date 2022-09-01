@@ -6,15 +6,3 @@ Projeto PetShop feito em NodeJS
 
 ### Instalação
 `npm install`
-
-### Para rodar o projeto
-
-Crie um arquivo na raíz do projeto chamado .env e coloque dentro do arquivo a porta que você gostaria de rodar o projeto.
-
-Exemplo:
-
-`PORT = 80`
-
-Em seguida rode o comando 
-
-`npm run start-dev`
